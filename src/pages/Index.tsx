@@ -1,4 +1,3 @@
-import { ZiggeoPlayer } from 'react-ziggeo';
 import { Button } from '@/components/ui/button';
 import fitnessLogo from '@/assets/fitness-doctor-logo.png';
 
@@ -49,17 +48,32 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Right side - Video Player */}
           <div className="order-1 lg:order-2">
             <div className="bg-card border rounded-lg p-4 sm:p-6 shadow-lg">
-              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                <ZiggeoPlayer
-                  apikey="YOUR_ZIGGEO_API_KEY"
-                  video="YOUR_VIDEO_TOKEN"
-                  width="100%"
-                  height="100%"
-                  theme="modern"
-                  themecolor="blue"
+              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center relative">
+                {/* Ziggeo Video Player Placeholder */}
+                <div className="w-full h-full bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg flex flex-col items-center justify-center p-8 text-center">
+                  <div className="mb-4">
+                    <svg className="w-16 h-16 text-blue-600 dark:text-blue-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-semibold text-blue-900 dark:text-blue-100 mb-2">
+                    Video Player Ready
+                  </h3>
+                  <p className="text-blue-700 dark:text-blue-300 text-sm">
+                    Ziggeo video player will be embedded here
+                  </p>
+                </div>
+                
+                {/* Custom Ziggeo Integration Script */}
+                <script
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                      // Add Ziggeo integration when ready
+                      // Replace this placeholder with actual Ziggeo embed code
+                    `
+                  }}
                 />
               </div>
             </div>
