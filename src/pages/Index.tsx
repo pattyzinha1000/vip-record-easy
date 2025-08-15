@@ -48,19 +48,28 @@ const Index = () => {
 
             {/* Video Player Section */}
             <div className="bg-gray-50 dark:bg-gray-800 rounded-3xl p-8 space-y-6">
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Training Video
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  Click to play your workout session
+                </p>
+              </div>
               
-              
-              <div className="aspect-video bg-white dark:bg-gray-900 rounded-2xl border-2 border-dashed border-gray-300 dark:border-gray-600 flex flex-col items-center justify-center text-center space-y-4">
-                <div className="bg-blue-100 dark:bg-blue-900 rounded-full p-6">
-                  <Video className="w-12 h-12 text-blue-600 dark:text-blue-400" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                    Ziggeo Video Player
-                  </h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Video player integration will appear here
-                  </p>
+              <div className="aspect-video bg-black rounded-2xl relative overflow-hidden">
+                <video 
+                  className="w-full h-full object-cover"
+                  controls
+                  poster="/placeholder.svg"
+                >
+                  <source src="" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                  <button className="bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-4 transition-all">
+                    <Play className="w-8 h-8 text-gray-900 ml-1" />
+                  </button>
                 </div>
               </div>
             </div>
