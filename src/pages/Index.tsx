@@ -48,10 +48,7 @@ const Index = () => {
 
             {/* Video Player Section */}
             <div className="bg-gray-50 dark:bg-gray-800 rounded-3xl p-8 space-y-6">
-              <div className="flex items-center justify-center space-x-3 text-gray-700 dark:text-gray-300">
-                <Video className="w-6 h-6" />
-                <h2 className="text-xl font-semibold">Video Player</h2>
-              </div>
+              
               
               <div className="aspect-video bg-white dark:bg-gray-900 rounded-2xl border-2 border-dashed border-gray-300 dark:border-gray-600 flex flex-col items-center justify-center text-center space-y-4">
                 <div className="bg-blue-100 dark:bg-blue-900 rounded-full p-6">
