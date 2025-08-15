@@ -27,7 +27,7 @@ const Index = () => {
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
-              Ready to Record Your
+              Make sure to click below to
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                 Personal Video?
               </span>
