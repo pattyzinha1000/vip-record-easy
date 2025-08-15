@@ -43,9 +43,7 @@ const Index = () => {
                 START RECORDING
               </Button>
               
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Your video will be securely processed and reviewed by our fitness experts
-              </p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Your video will be securely processed and reviewed by our Neuro-Biomechanical Analysis Experts!</p>
             </div>
 
             {/* Video Player Section */}
