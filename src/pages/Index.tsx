@@ -31,7 +31,7 @@ const Index = () => {
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Record your video!</span>
             </h1>
             
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">Click the Start Recording Red button below to start recording yourself then click where it says Click to Play to Start your training session! Have Fun VIP!</p>
+            <p className="text-xl max-w-2xl mx-auto leading-relaxed text-stone-950">Click the Red Start Recording button below to begin recording yourself, then click Click to Play to start your training session. Have fun, VIP!</p>
           </div>
 
           {/* Record Button and Video Player - Side by Side */}
