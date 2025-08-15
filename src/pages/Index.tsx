@@ -1,23 +1,16 @@
 import { Button } from '@/components/ui/button';
 import { Video, Star, Play } from 'lucide-react';
 import fitnessLogo from '/lovable-uploads/61fed94a-a633-4865-bc7a-d9cca8d59de8.png';
-
 const Index = () => {
   const handleRecord = () => {
     // Record functionality will be implemented
     console.log('Record button clicked');
   };
-
-  return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+  return <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Clean header */}
       <header className="w-full py-6 px-4 border-b border-gray-100 dark:border-gray-800">
         <div className="flex justify-center">
-          <img 
-            src={fitnessLogo} 
-            alt="The Fitness Doctor Logo" 
-            className="h-16 w-auto"
-          />
+          <img src={fitnessLogo} alt="The Fitness Doctor Logo" className="h-16 w-auto" />
         </div>
       </header>
 
@@ -29,7 +22,7 @@ const Index = () => {
           <div className="space-y-8">
             <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full shadow-lg">
               <Star className="w-6 h-6 text-yellow-300 fill-current" />
-              <span className="text-2xl font-bold tracking-wide">VIP ACCESS</span>
+              <span className="text-2xl font-bold tracking-wide">VIP ON DEMAND AND INTERACTIVE</span>
               <Star className="w-6 h-6 text-yellow-300 fill-current" />
             </div>
             
@@ -49,11 +42,7 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             {/* Record Button */}
             <div className="space-y-8">
-              <Button 
-                onClick={handleRecord}
-                size="lg"
-                className="group relative bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-16 py-8 text-2xl font-bold rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-0 w-full"
-              >
+              <Button onClick={handleRecord} size="lg" className="group relative bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-16 py-8 text-2xl font-bold rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-0 w-full">
                 <Play className="w-8 h-8 mr-4 group-hover:scale-110 transition-transform" />
                 START RECORDING
               </Button>
@@ -87,8 +76,6 @@ const Index = () => {
           </div>
         </div>
       </main>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
