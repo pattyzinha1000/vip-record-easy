@@ -28,14 +28,10 @@ const Index = () => {
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
               Make sure to click below to
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                Personal Video?
-              </span>
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Record your video!</span>
             </h1>
             
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              Click the button below to start recording your personalized fitness consultation video.
-            </p>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">Click the Start Recording Red button below to start recording yourself then click where it says Click to Play to Start your training session! Have Fun VIP!</p>
           </div>
 
           {/* Record Button and Video Player - Side by Side */}
